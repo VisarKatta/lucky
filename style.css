@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(26, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 200px ;
+    margin-right: 200px;
+    
+}
+.header{
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    position: sticky;
+    top: 0;
+    z-index:100 ;
+    background-color:rgb(35, 93, 251) ;
+    
+    
+}
+.left-side{
+    
+    flex: 1;
+    margin-right: 150px;
+}
+.right-side a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    flex: 1;
+    flex-shrink: 0;
+    
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side1{
+    padding-right: 100px;
+
+}
+span{
+    color: rgb(35, 93, 251);
+}
+p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.right-side1{
+    padding-left: 100px;
+}
+.sar-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+.about{
+    margin-top: 200px;
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left-side2{
+    flex: 1;
+    line-height: 35px;
+    margin-right: 100px;
+}
+p{
+    font-size: 17px;
+}
+.right-side2{
+    margin-left: 100px;
+}
+.aupp-pic{
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.contact{
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.main3{
+    
+    display: flex;
+    flex-direction: row;
+}
+.left-side3{
+    flex: 1;
+    margin-right: 150px;
+}
+.tele-pic, .gmail-pic, .fb-pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;  
+    vertical-align: middle;
+}
+.tel, .gm, .name{
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+.right-side3{
+    flex: 1;
+  
+    
+}
+.Name, .mail{
+    width: 150px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.write{
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color:rgb(35, 93, 251);
+    font-size: 15px;
+    cursor: pointer;
+
+    
+}
+button:hover{
+    color:rgb(35, 93, 251);
+    background-color: white;
+}
+@media screen and (max-width: 576px){
+    body{
+        margin: 0 2rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+   .main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .left-side2{
+    width: 100%;
+    margin: 0;
+   }
+   .aupp-pic{
+  
+
+    padding-right: 105px;
+   }
+   .sar-pic{
+    margin-right: 105px;
+    margin-top: 20px;
+    
+   }
+   .main3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+   
+   }
+   .right-side3, .right-side1,  .right-side2{
+    padding-left: 10rem;
+    width: 100%;
+    
+   }
+   .contact{
+    text-align: center;
+   }
+   button{
+    display: block;
+   }
+   .write{
+    width: 335px;
+   }
+}
